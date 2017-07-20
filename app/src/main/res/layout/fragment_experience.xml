@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.claymav.payday2assistant.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textSize="20sp"
+            android:layout_above="@+id/fromlvl"
+            android:layout_alignStart="@+id/tolvl" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience Calculator"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_above="@+id/to"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/fromlvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tolvl"
+            android:layout_alignBottom="@+id/tolvl"
+            android:layout_alignStart="@+id/title"
+            android:width="80dp"
+            android:autofillHints="0"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/tolvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/title"
+            android:layout_centerVertical="true"
+            android:width="80dp"
+            android:autofillHints="100"
+            android:ems="10"
+            android:hint="100"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:textSize="20sp"
+            android:layout_above="@+id/fromlvl"
+            android:layout_alignStart="@+id/fromlvl" />
+
+        <TextView
+            android:id="@+id/expneeded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromlvl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:hint="23,336,414"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/subbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="Calculate"
+            android:layout_below="@+id/expneeded"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/payday_name"
+            android:layout_above="@+id/to"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
